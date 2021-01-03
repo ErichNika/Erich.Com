@@ -76,7 +76,7 @@ body {
 }
 
 .portfolio-img-background {
-    
+    position: relative;
     height: 1000px;
     width: auto;
     background-position: center;
@@ -106,7 +106,7 @@ body {
 .img-txt-wrapper p {
     font-weight: 750;
     color: rgb(147, 38, 219);
-    font-size: 30px;
+    font-size: 40px;
     
 }
 
@@ -136,16 +136,20 @@ body {
 
 /* Contact Page */
 .section{
-    height: 100vh;
+    height: 1000px;
     width: 100%;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-image: url("images/ColorfulGrid.png");
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    background-size: 100% 100%;
   }
  
   .container2{
+    position: relative;
     width: 90%;
     max-width: 500px;
     margin:0 auto;
@@ -154,10 +158,11 @@ body {
     background-color: white;
     border-radius: 8px;
     margin-bottom: 20px;
+  
   }
 
 .form-group{
-    width: 100%;
+    width: 95%;
     margin-top: 20px;
     font-size: 20px;
   }
@@ -179,7 +184,8 @@ body {
     font-size: 24px;
     border-radius: 8px;
     font-family: 'Montserrat';
-    color: rgb(27, 166, 247);
+    font-weight: 900;
+    color: rgb(122, 48, 207);
     background-color: rgb(227, 233, 238);
     text-align: center;
     cursor: pointer;
