@@ -3,14 +3,18 @@ body {
     font-family: "Staatliches", cursive;
     margin: 0px;
     scroll-behavior: smooth;
-    font-size: 30px;
+    font-size: 35px;
     height: 100%;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    
+}
 
+.background h {
+  font-size: 50px;
 }
 
 /* Nav Styles */
@@ -27,7 +31,7 @@ body {
 }
 
 .right-side {
-    font-size: 30px;
+    font-size: 35px;
 
 }
 
@@ -69,22 +73,40 @@ body {
 .active-nav-link a {
     color: black !important; 
 }
+
 /* Home */
+/* .cube-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+} */
 
 .portfolio-item-wrapper {
     position: relative; /* required if we want to have any position absoulte elements nested inside it */
 }
 
+#c {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  touch-action: none;
+  width: 400px; /* for borders */
+  height: 400px; /*for borders  */
+  border: none;
+  top:150px;
+  left:250px;
+
+}
 .portfolio-img-background {
     position: relative;
     height: 1000px;
     width: auto;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .img-txt-wrapper {
+    font-family: 'Goldman', cursive;
     position: absolute;
     top: 50%;
     left: 20px;
@@ -111,7 +133,6 @@ body {
 }
 
 
-
 /* About Page */
 .content-wrapper {
     font-family: 'Teko', sans-serif !important; 
@@ -119,19 +140,33 @@ body {
 .two-column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: cadetblue;
+ 
 }
 
 .profile-image-wrapper img {
-    width: 100%
+  position: relative;
+  width: 100%;
+  height: 33%;
+ 
 }
 
 .profile-content-wrapper {
-    padding: 30px
+    padding: 20px;
+    font-size: larger;
+    
 }
 
 .profile-content-wrapper h1 {
     font-family: 'Teko', sans-serif;
     color:yellowgreen;
+}
+
+/* Projects */
+.background {
+
+  height: 1000px;
+  background-color: coral;
 }
 
 /* Contact Page */
