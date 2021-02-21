@@ -19,6 +19,7 @@ body {
     
 }
 
+/* --------------------------------------------------------------------------------------------------- */
 
 /* Nav Styles */
 .nav-wrapper {
@@ -77,8 +78,9 @@ body {
     color: black !important; 
 }
 
-/* Home */
+/* ---------------------------------------------------------------------------------------------------*/
 
+/* Home */
 
 .portfolio-item-wrapper {
     position: relative; /* required if we want to have any position absoulte elements nested inside it */
@@ -96,7 +98,7 @@ body {
 }
 .portfolio-img-background {
     position: relative;
-    height: 1250px;
+    height: 1100px;
     width: auto;
     background-position: center;
     background-size: 100% 100%;
@@ -115,11 +117,49 @@ body {
     color: rgb(35, 192, 197);
     font-size: 40px;
     line-height: 25%;
+    
 }  
 
 .img-txt-wrapper E {
 
     color: rgb(253, 253, 253);
+  
+    text-transform: uppercase;
+
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.img-txt-wrapper h1 {
+
+  text-shadow: 1px 1px 1px #143ba8,
+      1px 2px 1px #143ba8,
+      1px 3px 1px #143ba8,
+      1px 4px 1px #143ba8,
+      1px 5px 1px #143ba8,
+      1px 6px 1px #143ba8,
+      1px 7px 1px #143ba8,
+      1px 8px 1px #143ba8,
+      1px 9px 1px #143ba8,
+      1px 10px 1px #143ba8,
+      1px 18px 6px rgba(16,16,16,0.4),
+      1px 22px 10px rgba(16,16,16,0.2),
+      1px 25px 35px rgba(16,16,16,0.2),
+      1px 30px 60px rgba(16,16,16,0.4);
 }
 
 .img-txt-wrapper p {
@@ -129,6 +169,7 @@ body {
     
 }
 
+/* ---------------------------------------------------------------------------------------------------*/
 
 /* About Page */
 .content-wrapper {
@@ -143,26 +184,23 @@ body {
 }
 
 .profile-image-wrapper {
-  margin: 20px;
+
+  background-color: blue;
+  height: 1100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
-  
-  max-height: 300px;
+  width: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
- 
 }
-
 
 .profile-image-wrapper img {
   width: 95%;
   height: auto;
   max-height: 500px;
   margin-top: 25px;
-
+  margin-left: 10px;
 }
 
 .profile-content-wrapper {
@@ -176,18 +214,30 @@ body {
     color:yellowgreen;
 }
 
+/* --------------------------------------------------------------------------------------------------- */
+
+/* Skills & Experience  */
+.bck {
+  height: 1000px;
+  background-color: rgb(39, 124, 173);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
 /* Projects */
 .background {
   
   display: flex;
   flex-direction: row;
-  height: 85vh;
+  height: 600px;
   width: auto;
   background-color: coral;
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
 
@@ -203,14 +253,61 @@ body {
   right: 25%;
 }
 
-.bck {
-  height: 1000px;
-  background-color: rgb(39, 124, 173);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* projects below pong */
+.portfolio-items-wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* number of columns */
 }
 
+.portfolio-item-wrapper2 {
+  position: relative; /* required if we want to have any position absoulte elements nested inside it */
+}
+
+.portfolio-img-background2 {
+  height: 350px;
+  width: 100%; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-txt-wrapper2 {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 40%;
+  padding-right: 100px;
+} 
+
+.logo-wrapper img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px; 
+}
+
+.img-txt-wrapper2 .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+
+/* needs to be more specific with selector */
+.img-txt-wrapper2:hover .subtitle {
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
 
 /* Contact Page */
 .section{
@@ -237,7 +334,6 @@ body {
     background-color: rgb(199, 230, 25);
     border-radius: 8px;
     margin-bottom: 20px;
-  
   }
 
   .container2 h {
@@ -245,7 +341,15 @@ body {
     text-align: center;
     margin-left: 10%;
     font-size: 50px;
-    color: rgb(18, 208, 214);
+    color: rgb(24, 175, 180);
+  }
+
+  .container2 h1 {
+    background-color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(84, 221, 130);
   }
 
 .form-group{
@@ -319,3 +423,5 @@ body {
       pointer-events: none;
     }
   }
+
+  /* ---------------------------------------------------------------------------------------------------*/

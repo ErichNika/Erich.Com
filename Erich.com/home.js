@@ -9,15 +9,15 @@ function main(){
   
   {
     const color = 0xFFFFFF;
-    const intensity = 7.5;
+    const intensity = 10.5;
     const light = new THREE.DirectionalLight(color, intensity);
-    light.position.set(5, 5, 2);
+    light.position.set(0, 5, 0);
     scene.add(light);
   }
   
   // Create a basic perspective camera
   var camera = new THREE.PerspectiveCamera( 100, window.innerWidth/window.innerHeight, 0.1, 2000 );
-  camera.position.z = 1.5;
+  camera.position.z = 1.25;
   
   // Create a renderer with Antialiasing
   var renderer = new THREE.WebGLRenderer({
@@ -45,17 +45,20 @@ function main(){
   var material = new THREE.MeshPhongMaterial( { color: "#433F81" } );
   var cube = new THREE.Mesh( geometry, material );
   
-  cube.material.color.setRGB(0.1, 1.0, 0.1);
+  cube.material.color.setRGB(0.1, 0.5, 0.1);
+ 
   // Add cube to Scene
   scene.add( cube );
+  // cube.rotation.x = Math.PI / 4
 
   // Render Loop
+  
   var render = function () {
     requestAnimationFrame( render );
   
-    cube.rotation.x += 0.005;
-    cube.rotation.y += 0.005;
-
+    cube.rotation.x += 0.004;
+    cube.rotation.z += 0.004;
+    cube.rotation.z += -0.002;
    
     
     // Render the scene

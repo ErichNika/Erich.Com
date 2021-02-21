@@ -44,15 +44,35 @@
            </div>
        
         </div>
-
+        <h>Coming Soon... but here's some pong for now.</h>
+        
+      
+    
+       
     <div class="background">
-        <!-- <h>Coming Soon...</h> -->
+        
         <h class="counter-display">(..)</h>
         <h1 class="counter-display2">(..)</h1>
          
         <canvas width=750px height=500px id="game"></canvas>
         <script>
-        
+        var keys = {};
+        window.addEventListener("keydown",
+        function(e){
+        keys[e.keyCode] = true;
+        switch(e.keyCode){
+            case 37: case 39: case 38:  case 40: // Arrow keys
+            case 32: e.preventDefault(); break; // Space
+            default: break; // do not block other keys
+            }
+        },
+    false);
+    window.addEventListener('keyup',
+        function(e){
+            keys[e.keyCode] = false;
+        },
+    false);
+
         let counterDisplayElem = document.querySelector('.counter-display');
         let counterDisplayElem2 = document.querySelector('.counter-display2');
         let left_score = 0;
@@ -249,6 +269,87 @@
         requestAnimationFrame(loop);
         </script>
     </div>
+    
+        <div class="portfolio-items-wrapper2">
+             
+             <div class="portfolio-item-wrapper2">
+                 <div class="portfolio-img-background2" style="background-image:url(images/RMT.png)"></div>
+         
+                 <div class="img-txt-wrapper2">
+                     <div class="logo-wrapper">
+                         <img src="images/argonne.png">
+                     </div>
+                 
+                     <div class="subtitle">
+                         Coming soon...
+                     </div>
+                 </div>    
+             </div>
+
+             <div class="portfolio-item-wrapper2">
+                 <div class="portfolio-img-background2" style="background-image:url(images/tech.jpg)"></div>
+             
+                 <div class="img-txt-wrapper2">
+                     <div class="logo-wrapper">
+                         <img src="images/binarytree.jpg">
+                     </div>
+                 
+                     <div class="subtitle">
+                         Coming soon... 
+                     </div>
+                 </div>    
+             </div>
+
+             <div class="portfolio-item-wrapper2">
+                 <div class="portfolio-img-background2" style="background-image:url(images/G1.jpg)"></div>
+             
+                 <div class="img-txt-wrapper2">
+                     <div class="logo-wrapper">
+                         <img src="images/catStache.jpg">
+                     </div>
+                 
+                     <div class="subtitle">
+                        Coming soon... 
+                     </div>
+                 </div>    
+             </div>
+
+             <div class="portfolio-item-wrapper2">
+                 <div class="portfolio-img-background2" style="background-image:url(images/G2.jpg)"></div>
+             
+                 <div class="img-txt-wrapper2">
+                     <div class="logo-wrapper">
+                         <img src="images/smile.jpg">
+                     </div>
+                 
+                     <div class="subtitle">
+                         Coming soon... 
+                     </div>
+                 </div>    
+             </div>
+         </div>
+ 
+  
+
+
+    <script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper2')
+
+    portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+        // console.log(portfolioItem)
+    
+        portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+
+    portfolioItem.addEventListener('mouseout', () => {
+        // console.log(portfolioItem)
+
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+    })
+    </script>
+     </div>
     </div>
 </body>
 </html>
