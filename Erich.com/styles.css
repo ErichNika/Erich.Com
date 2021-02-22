@@ -4,7 +4,6 @@ body {
     margin: 0px;
     scroll-behavior: smooth;
     font-size: 35px;
-
     height: 100%;
     width: 100%;
     max-width: 100%;
@@ -82,11 +81,7 @@ body {
 
 /* Home */
 
-.portfolio-item-wrapper {
-    position: relative; /* required if we want to have any position absoulte elements nested inside it */
-}
-
-#c {
+#c {    
   margin: 0;
   padding: 0;
   position: absolute;
@@ -94,9 +89,13 @@ body {
   border: none;
   top:150px;
   left:300px;
-
 }
-.portfolio-img-background {
+
+.home-item-wrapper {
+    position: relative; 
+}
+
+.home-img-background {
     position: relative;
     height: 1100px;
     width: auto;
@@ -174,16 +173,24 @@ body {
 /* About Page */
 .content-wrapper {
     font-family: 'Teko', sans-serif !important; 
+    color: blanchedalmond;
+}
+
+.content-wrapper p {
+
+    margin-top: 0.5em ;
+    margin-bottom: 0.5em ;
+  
 }
 .two-column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: cadetblue;
-    height: 1600px;
+    background-color: rgb(25, 4, 94);
+    height: 100%;
  
 }
 
-.profile-image-wrapper {
+.about-image-wrapper {
 
   background-color: blue;
   height: 1100px;
@@ -195,7 +202,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.profile-image-wrapper img {
+.about-image-wrapper img {
   width: 95%;
   height: auto;
   max-height: 500px;
@@ -203,15 +210,15 @@ body {
   margin-left: 10px;
 }
 
-.profile-content-wrapper {
+.about-content-wrapper {
     padding: 20px;
     font-size: larger;
     
 }
 
-.profile-content-wrapper h1 {
+.about-content-wrapper h1 {
     font-family: 'Teko', sans-serif;
-    color:yellowgreen;
+    color:rgb(188, 240, 84);
 }
 
 /* --------------------------------------------------------------------------------------------------- */
@@ -219,7 +226,7 @@ body {
 /* Skills & Experience  */
 .bck {
   height: 1000px;
-  background-color: rgb(39, 124, 173);
+  background-color: rgb(88, 6, 40);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,7 +236,6 @@ body {
 
 /* Projects */
 .background {
-  
   display: flex;
   flex-direction: row;
   height: 600px;
@@ -238,13 +244,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-.background h {
-  position: absolute;
-  font-size: 50px;
-  left: 25%;
 }
 
 .background h1 {
@@ -256,15 +255,15 @@ body {
 /* projects below pong */
 .portfolio-items-wrapper2 {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* number of columns */
+  grid-template-columns: 1fr 1fr; 
 }
 
 .portfolio-item-wrapper2 {
-  position: relative; /* required if we want to have any position absoulte elements nested inside it */
+  position: relative; 
 }
 
 .portfolio-img-background2 {
-  height: 350px;
+  height: 400px;
   width: 100%; 
   background-size: cover;
   background-position: center;
@@ -296,7 +295,6 @@ body {
   color: transparent;
 }
 
-/* needs to be more specific with selector */
 .img-txt-wrapper2:hover .subtitle {
   font-weight: 600;
   color: lightseagreen;
