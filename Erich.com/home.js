@@ -19,7 +19,7 @@ function main(){
   var camera = new THREE.PerspectiveCamera( 100, window.innerWidth/window.innerHeight, 0.1, 2000 );
   camera.position.z = 1.25;
   
-  // Create a renderer with Antialiasing
+  // Create renderer 
   var renderer = new THREE.WebGLRenderer({
       canvas,
       alpha: true,
@@ -40,7 +40,7 @@ function main(){
   // FUN STARTS HERE
   // ------------------------------------------------
   
-  // Create a Cube Mesh with basic material
+  // Create a Cube Mesh 
   var geometry = new THREE.BoxGeometry( 1, 1, 1 );
   var material = new THREE.MeshPhongMaterial( { color: "#433F81" } );
   var cube = new THREE.Mesh( geometry, material );

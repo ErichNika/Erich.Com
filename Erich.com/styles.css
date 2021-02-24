@@ -24,7 +24,7 @@ body {
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 40px; 
+    padding: 40px;
     background-color: rgb(33, 179, 53);
 }
 
@@ -224,13 +224,41 @@ body {
 /* --------------------------------------------------------------------------------------------------- */
 
 /* Skills & Experience  */
-.bck {
-  height: 1000px;
+.wrap{
   background-color: rgb(88, 6, 40);
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.bck {
+  position:relative;
+  height: 1000px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
+.wrap h1 {
+  
+  margin: 0;
+  text-align: center;
+  color: #f5f3f3;
+  font-family: 'Teko', sans-serif;
+  font-size: large;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgb(0, 0, 0);
+ 
+}
+
+
+
 
 /* --------------------------------------------------------------------------------------------------- */
 
@@ -248,9 +276,16 @@ body {
 
 .background h1 {
   position: absolute;
-  font-size: 50px;
+  font-size: 40px;
   right: 25%;
 }
+
+.background h2 {
+  position: absolute;
+  font-size: 40px;
+  left: 25%;
+}
+
 
 /* projects below pong */
 .portfolio-items-wrapper2 {
@@ -339,7 +374,7 @@ body {
     text-align: center;
     margin-left: 10%;
     font-size: 50px;
-    color: rgb(24, 175, 180);
+    color: rgb(33, 92, 219);
   }
 
   .container2 h1 {
